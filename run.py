@@ -1812,8 +1812,20 @@ def save_to_wav2(dropbox):
 
 def GradioSetup():
     default_weight = names[0] if names else ""
+    
+    
+    
+    
+import lib.tools.loader_themes as loader_themes
 
-    with gr.Blocks(theme=NoCrypt/miku, title="Kanoyo-VC") as app:
+my_kano = loader_themes.load_json()
+if my_kano:
+    pass
+else:
+    my_kano = "NoCrypt/miku"
+
+
+    with gr.Blocks(theme=my_kano, title="Kanoyo-VC") as app:
         gr.HTML("<h1> 💎 Kanoyo-VC </h1>")
         with gr.Tabs():
             with gr.TabItem(i18n("Model Inference")):
