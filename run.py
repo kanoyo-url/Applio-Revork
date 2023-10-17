@@ -1825,6 +1825,9 @@ else:
     my_kano = "NoCrypt/miku"
 
 
+def GradioSetup():
+    default_weight = names[0] if names else ""
+
     with gr.Blocks(theme=my_kano, title="Kanoyo-VC") as app:
         gr.HTML("<h1> 💎 Kanoyo-VC </h1>")
         with gr.Tabs():
