@@ -2991,7 +2991,7 @@ def GradioRun(app):
             server_port=config.listen_port,
             quiet=True,
             favicon_path="./assets/images/icon.png",
-            share=false,
+            share=False,
         )
     else:
         app.queue(concurrency_count=concurrency_count, max_size=max_size).launch(
@@ -3000,7 +3000,7 @@ def GradioRun(app):
             server_port=config.listen_port,
             quiet=True,
             favicon_path="./assets/images/icon.png",
-            share=false,
+            share=False,
         )
 
 
